@@ -33,6 +33,8 @@
   "scripts": {
     "start": "react-scripts start",
     "publish:patch": "npm version patch && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:major": "npm version major && npm publish",
     "build": "del dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
   },
   "eslintConfig": {
