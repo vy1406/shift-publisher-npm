@@ -4,9 +4,10 @@
   "author": "Vladimir Yel",
   "keywords": ["react", "components", "ui"],
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "license" : "BSD-3-Clause",
   "files": [ "dist", "README.md" ],
   "repository": {
       "type": "git",
@@ -24,6 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "publish:patch":"npm version patch && npm publish",
     "build": "del dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
   },
   "eslintConfig": {
