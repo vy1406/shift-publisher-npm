@@ -2,16 +2,23 @@
   "name": "npm-shared-shift-publisher",
   "description": "Shared components for studing purpose only",
   "author": "Vladimir Yel",
-  "keywords": ["react", "components", "ui"],
-  "version": "0.1.0",
+  "keywords": [
+    "react",
+    "components",
+    "ui"
+  ],
+  "version": "0.1.1",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "license" : "BSD-3-Clause",
-  "files": [ "dist", "README.md" ],
+  "license": "BSD-3-Clause",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/vy1406/shift-publisher-npm"
+    "type": "git",
+    "url": "git+https://github.com/vy1406/shift-publisher-npm"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
@@ -25,7 +32,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "publish:patch":"npm version patch && npm publish",
+    "publish:patch": "npm version patch && npm publish",
     "build": "del dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
   },
   "eslintConfig": {
